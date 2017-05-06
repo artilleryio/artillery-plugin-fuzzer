@@ -37,7 +37,7 @@ Then just use the `{{ naughtyString }}` variable as you would any other variable
 
 A new value for the `naughtyString` variable will be generated for each new request in a scenario.
 
-See the complete example in [`example.yml`](example.yml)
+See the complete example in [`example.yaml`](example.yaml)
 
 # Why?
 
@@ -59,7 +59,7 @@ Happy fuzzing!
 
 # Roadmap
 
-Sending [bnls](https://github.com/minimaxir/big-list-of-naughty-strings/) payloads is a good start for a fuzzer, but it's only the first small step. We want to make Artillery a great tool for API fuzz testing. Got an idea for this plugin? Share your feedback in [Issues](issues).
+Sending [bnls](https://github.com/minimaxir/big-list-of-naughty-strings/) payloads is a good start for a fuzzer, but it's only the first small step. We want to make Artillery a great tool for API fuzz testing. Got an idea for this plugin? Share your feedback in [Issues](https://github.com/shoreditch-ops/artillery-plugin-fuzzer/issues).
 
 # License
 
