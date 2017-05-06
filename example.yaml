@@ -1,0 +1,15 @@
+config:
+  target: "http://localhost:3003"
+  phases:
+    - duration: 1
+      arrivalCount: 1
+  plugins:
+    fuzzer: {}
+scenarios:
+  - name: "Fuzz some stuff"
+    flow:
+      - get:
+          url: "/?hello-{{naughtyString}}"
+      - log: "***** naughtyString = {{ naughtyString }}"
+      - get:
+          url: "/something/else?{{naughtyString}}"
