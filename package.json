@@ -1,6 +1,6 @@
 {
   "name": "artillery-plugin-fuzzer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fuzz your HTTP APIs with Artillery",
   "main": "index.js",
   "scripts": {
