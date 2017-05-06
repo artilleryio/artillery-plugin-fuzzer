@@ -1,0 +1,36 @@
+{
+  "name": "artillery-plugin-fuzzer",
+  "version": "1.0.0",
+  "description": "Fuzz your HTTP APIs with Artillery",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js",
+    "commitmsg": "conventional-changelog-lint -e",
+    "precommit": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoreditch-ops/artillery-plugin-fuzzer.git"
+  },
+  "keywords": [
+    "fuzzer",
+    "fuzzing",
+    "security",
+    "artillery"
+  ],
+  "author": "Hassy Veldstra <h@artillery.io>",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/shoreditch-ops/artillery-plugin-fuzzer/issues"
+  },
+  "homepage": "https://github.com/shoreditch-ops/artillery-plugin-fuzzer#readme",
+  "devDependencies": {
+    "conventional-changelog-lint": "^1.1.9",
+    "husky": "^0.13.3",
+    "semistandard": "^11.0.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "debug": "^2.6.6"
+  }
+}
