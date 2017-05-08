@@ -49,7 +49,7 @@ Here's a sample payload sent by this plugin:
 
 👾 🙇 💁 🙅 🙆 🙋 🙎 🙍
 
-Something innocent like this could crash your application if it persists data in a MySOL database using the default settings. How? MySQL InnoDB engine uses the `latin1` encoding by default.
+Something innocent like this could crash your application if it persists data in a MySQL database using the default settings. How? MySQL InnoDB engine uses the `latin1` encoding by default.
 
 Did you set the `utf8` encoding on your database? You're still in trouble because those characters are outside the [BMP](https://en.wikipedia.org/wiki/Plane_(Unicode)#Basic_Multilingual_Plane) and you need to have specified `utf8mb4` and potentially made changes to your schema to be able to store them properly.
 
