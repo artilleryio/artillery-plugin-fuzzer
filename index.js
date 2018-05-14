@@ -22,6 +22,10 @@ function FuzzerPlugin (script, events) {
     }
 
     scenario.beforeRequest.push('fuzzerPluginCreateVariable');
+
+    if (scenario.engine === 'socketio') {
+      scenario.flow.unshift({function: 'fuzzerPluginCreateVariable'});
+    }
   });
 
   debug('Plugin initialized');
@@ -29,8 +33,16 @@ function FuzzerPlugin (script, events) {
 }
 
 function fuzzerPluginCreateVariable (req, userContext, events, done) {
+  let ctx = userContext;
+  let cb = done;
+
+  if (arguments.length === 3) {
+    // called as a "function"
+    ctx = req;
+    cb = events;
+  }
   const ns = blns[Math.floor(Math.random() * blns.length)];
-  userContext.vars.naughtyString = ns;
+  ctx.vars.naughtyString = ns;
   debug(`fuzzerPluginCreateVariable: ${ns}`);
-  return done();
+  return cb();
 }
