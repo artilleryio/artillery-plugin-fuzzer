@@ -59,7 +59,7 @@ Happy fuzzing!
 
 # Roadmap
 
-Sending [bnls](https://github.com/minimaxir/big-list-of-naughty-strings/) payloads is a good start for a fuzzer, but it's only the first small step. We want to make Artillery a great tool for API fuzz testing. Got an idea for this plugin? Share your feedback in [Issues](https://github.com/shoreditch-ops/artillery-plugin-fuzzer/issues).
+Sending [blns](https://github.com/minimaxir/big-list-of-naughty-strings/) payloads is a good start for a fuzzer, but it's only the first small step. We want to make Artillery a great tool for API fuzz testing. Got an idea for this plugin? Share your feedback in [Issues](https://github.com/shoreditch-ops/artillery-plugin-fuzzer/issues).
 
 # License
 
