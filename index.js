@@ -23,7 +23,7 @@ function FuzzerPlugin (script, events) {
 
     scenario.beforeRequest.push('fuzzerPluginCreateVariable');
 
-    if (scenario.engine === 'socketio') {
+    if (['socketio', 'ws'].includes(scenario.engine)) {
       scenario.flow.unshift({function: 'fuzzerPluginCreateVariable'});
     }
   });
