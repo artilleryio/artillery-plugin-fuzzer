@@ -4,7 +4,7 @@
   "description": "Fuzz your HTTP APIs with Artillery",
   "main": "index.js",
   "scripts": {
-    "test": "node test/index.js",
+    "test": "tape test/*",
     "commitmsg": "conventional-changelog-lint -e",
     "precommit": "semistandard"
   },
